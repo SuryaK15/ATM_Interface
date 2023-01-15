@@ -30,7 +30,7 @@ Currently the MockDataBase has 2 users to check the working of the Bank Applicat
 # Transactions Performed History :- 
 ![Transactions_OnClick](output_snapshots/onSuccessful_Login/transactions_onClick.png "Transaction History of sample")
 
-* For Detailed Snapshots of each Operations, with respective corner case, check out output_snapshots folder. 
+* For Detailed Snapshots of each Operations, with respective corner case, check out [output_snapshots](output_snapshots/) folder. 
 
 
 # Note :- 
