@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="login_page.css">
+    <title>WELCOME TO SAMPLE BANKING PROJECT</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form>
+          <h1>Welcome to Online Banking Services!</h1>
+ 
+          <div class="form-group">
+            <input type="submit" value="Get Started" onclick="login()">
+          </div>
+        </form> 
+      </div>
+    </div>
+    <script>
+    //   function login(){
+    //     var userId = document.getElementById("userId").value;
+    //     var pin = document.getElementById("pin").value;
+    //     if(userId === "user1" && pin === "1234"){
+    //       alert("Login Successful!");
+    //     }else{
+    //       alert("Invalid userId or pin. Please try again.");
+    //     }
+    //   }
+    function login(){
+    var userId = document.getElementById("userId").value;
+    var pin = document.getElementById("pin").value;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(this.responseText);
+            if(response.status === "success"){
+                alert("Login Successful!");
+            }else{
+                alert("Invalid userId or pin. Please try again.");
+            }
+        }
+    };
+    xhttp.open("POST", "http://localhost:8000/login", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send(JSON.stringify({userId: userId, pin: pin}));
+}
+
+    </script>
+  </body>
+</html>
