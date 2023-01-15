@@ -22,7 +22,7 @@ Currently the MockDataBase has 2 users to check the working of the Bank Applicat
 
 # Major Snapshots :- 
 * On Successful Login :- 
-![Login_Interface](C:\Users\m01su\Desktop\Bank_Project\output_snapshots\onSuccessful_Login\login_interface1.png "Mouse hover Title")
+![Login_Interface](output_snapshots/onSuccessful_Login/login_interface1.png "Mouse hover Title")
 
 * Capable Operations :- 
 ![Operations_Interface](C:\Users\m01su\Desktop\Bank_Project\output_snapshots\onSuccessful_Login\login_interface1.png "Mouse hover Title")
