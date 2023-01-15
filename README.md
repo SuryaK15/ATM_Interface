@@ -13,7 +13,7 @@ This Repository contains a Mini Project of Working of a Bank With Real Time User
 
 The bank working model currently runs on JavaFX. We can also make the same for Console Based Application, just by removing the FX part and making some minor changes. 
 
-* To access the Driver class (main method) head over to [this]()path. 
+* To access the Driver class (main method) head over to [this]() path. 
 
 
 # Add Users in DataBase : - 
